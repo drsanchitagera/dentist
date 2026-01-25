@@ -1,0 +1,121 @@
+
+const menuItems = [ 
+    { 
+        text: "All Videos", 
+        href: "#tab-1", 
+        active: true, 
+        video_link: [
+            { name: "Wedding", link: "img/event-1.jpg", lightbox: "event-1", delay: "0.1s" },
+            { name: "Corporate", link: "img/event-2.jpg", lightbox: "event-2", delay: "0.3s" },
+            { name: "Wedding", link: "img/event-3.jpg", lightbox: "event-3", delay: "0.5s" },
+            { name: "Buffet", link: "img/event-4.jpg", lightbox: "event-4", delay: "0.7s" },
+            { name: "Cocktail", link: "img/event-5.jpg", lightbox: "event-5", delay: "0.1s" },
+            { name: "Wedding", link: "img/event-6.jpg", lightbox: "event-6", delay: "0.3s" },
+            { name: "Buffet", link: "img/event-7.jpg", lightbox: "event-7", delay: "0.5s" },
+            { name: "Corporate", link: "img/event-8.jpg", lightbox: "event-17", delay: "0.7s" }
+        ] 
+    }, 
+    { text: "Pharmacological", href: "#tab-2",
+        video_link: [
+            { name: "Wedding", link: "img/event-1.jpg", lightbox: "event-1", delay: "0.1s" },
+            { name: "Corporate", link: "img/event-2.jpg", lightbox: "event-2", delay: "0.3s" },
+        ]
+    }, 
+    { text: "Endodontics", href: "#tab-3", 
+        video_link: [
+            { name: "Wedding", link: "img/event-3.jpg", lightbox: "event-3", delay: "0.5s" },
+            { name: "Buffet", link: "img/event-4.jpg", lightbox: "event-4", delay: "0.7s" },
+        ] }, 
+    { text: "General Dentistry", href: "#tab-4", 
+        video_link: [
+            { name: "Cocktail", link: "img/event-5.jpg", lightbox: "event-5", delay: "0.1s" },
+            { name: "Wedding", link: "img/event-6.jpg", lightbox: "event-6", delay: "0.3s" },
+        ] }, 
+    { text: "Dental Materials", href: "#tab-5", 
+        video_link: [
+            { name: "Corporate", link: "img/event-8.jpg", lightbox: "event-17", delay: "0.7s" }
+        ] }, 
+    { text: "Clinical Hacks", href: "#tab-6", 
+        video_link: [
+            { name: "Wedding", link: "img/event-1.jpg", lightbox: "event-1", delay: "0.1s" },
+        ] } 
+];
+
+const latest_videosHTML = `
+<div class="container-fluid event py-6">
+    <div class="container">
+        <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
+            <h1 class="display-5 mb-5">Latest Videos</h1>
+        </div>
+        <div class="tab-class text-center">
+            <div id="menu-container-for-videos"></div>
+            <div class="tab-content">
+                <div id="video_link_HTML"></div>
+            </div>
+        </div>
+    </div>
+</div>
+`
+
+document.getElementById("latest_videos").innerHTML = latest_videosHTML;
+
+function setvideounorderedlistHTML() {
+    // Build menu
+    let ulHTML = '<ul class="nav nav-pills d-inline-flex justify-content-center mb-5 wow bounceInUp" data-wow-delay="0.1s">';
+    for (let i = 0; i < menuItems.length; i++) {
+        const item = menuItems[i];
+        ulHTML += `
+            <li class="nav-item p-2">
+                <a class="d-flex mx-2 py-2 border border-primary bg-light rounded-pill ${item.active ? 'active' : ''}" 
+                   data-bs-toggle="pill" href="${item.href}" onclick="handleClick('${item.text}', '${item.href}')">
+                    <span class="text-dark" style="width: 150px;">${item.text}</span>
+                </a>
+            </li>`;
+    }
+    ulHTML += '</ul>';
+    document.getElementById("menu-container-for-videos").innerHTML = ulHTML;
+}
+
+function handleClick(text, href) {
+    let video_link_HTML = '';
+    for (let i = 0; i < menuItems.length; i++) {
+        const item = menuItems[i];
+        if (item["text"] == text){
+
+            video_link_HTML += `
+            <div id="${item.href.substring(1)}" class="tab-pane fade show active p-0">
+                <div class="row g-4">
+                    <div class="col-lg-12">
+                        <div class="row g-4">`;
+
+            for (let j = 0; j < item.video_link.length; j++) {
+                const video = item.video_link[j];
+                video_link_HTML += `
+                    <div class="col-md-6 col-lg-3" data-wow-delay="${video.delay}">
+                        <div class="event-img position-relative">
+                            <div class="img-fluid rounded w-100 col-lg-5 wow bounceInUp" data-wow-delay="0.1s">
+                                
+                              <div class="video"> 
+                                <button type="button" class="btn btn-play" data-bs-toggle="modal" data-bs-target="#videoModal"> 
+                                <span></span> 
+                              </button> 
+                              </div>
+                            </div>
+                        </div>
+                    </div>`;
+            }
+            video_link_HTML += `
+                            </div>
+                        </div>
+                    </div>
+                </div>`;  
+                       
+        document.getElementById("video_link_HTML").innerHTML = video_link_HTML;    
+        }
+    
+    }
+    
+}
+
+setvideounorderedlistHTML();
+handleClick(menuItems[0].text, menuItems[0].href)
