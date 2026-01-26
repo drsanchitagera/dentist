@@ -9,7 +9,7 @@ const headerHTML = `
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav mx-auto">
-            <a href="index.html" id="home" class="nav-item nav-link">Home</a>
+            <a href="index.html" id="home" class="nav-item nav-link" >Home</a>
             <a href="about.html" id="about_us" class="nav-item nav-link">About Us</a>
             <div class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Notes/eBooks</a>
@@ -28,7 +28,7 @@ const headerHTML = `
             <a href="contact.html" class="nav-item nav-link" onclick="setActive(this)">Contact Us</a>
         </div>
         <div class="d-flex justify-content-end">
-            <a href="" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill">Book Now</a>
+            <a href="" class="btn btn-primary py-2 px-4 rounded-pill">Book Now</a>
         </div>
     </div>
 </nav>
