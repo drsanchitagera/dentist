@@ -34,12 +34,12 @@ h4, h5, h6, .h4, .h5, .h6 {
 
 .my-6 {
     margin-top: 6rem;
-    margin-bottom: 6rem;
+    /* margin-bottom: 6rem; */
 }
 
 .py-6 {
     padding-top: 6rem;
-    padding-bottom: 6rem;
+    /* padding-bottom: 6rem; */
 }
 
 .wow,
