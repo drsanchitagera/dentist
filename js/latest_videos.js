@@ -4,39 +4,41 @@ const menuItems = [
         text: "All Videos", 
         href: "#tab-1", 
         video_link: [
-            { name: "Wedding", link: "img/event-1.jpg", lightbox: "event-1", delay: "0.1s" },
-            { name: "Corporate", link: "img/event-2.jpg", lightbox: "event-2", delay: "0.3s" },
-            { name: "Wedding", link: "img/event-3.jpg", lightbox: "event-3", delay: "0.5s" },
-            { name: "Buffet", link: "img/event-4.jpg", lightbox: "event-4", delay: "0.7s" },
-            { name: "Cocktail", link: "img/event-5.jpg", lightbox: "event-5", delay: "0.1s" },
-            { name: "Wedding", link: "img/event-6.jpg", lightbox: "event-6", delay: "0.3s" },
-            { name: "Buffet", link: "img/event-7.jpg", lightbox: "event-7", delay: "0.5s" },
-            { name: "Corporate", link: "img/event-8.jpg", lightbox: "event-17", delay: "0.7s" }
+            { name: "Wedding", link: "img/event-1.jpg", lightbox: "event-1", delay: "0.1s" , href:"https://www.youtube.com/embed/VBONQKJp5PQ?si=JgT48jB8XP_XOMVF"},
+            { name: "Corporate", link: "img/event-2.jpg", lightbox: "event-2", delay: "0.3s" , href:"https://www.youtube.com/embed/VBONQKJp5PQ?si=JgT48jB8XP_XOMVF"},
+            { name: "Wedding", link: "img/event-3.jpg", lightbox: "event-3", delay: "0.5s" , href:"https://www.youtube.com/embed/VBONQKJp5PQ?si=JgT48jB8XP_XOMVF"},
+            { name: "Buffet", link: "img/event-4.jpg", lightbox: "event-4", delay: "0.7s" , href:"https://www.youtube.com/embed/VBONQKJp5PQ?si=JgT48jB8XP_XOMVF"},
+            { name: "Cocktail", link: "img/event-5.jpg", lightbox: "event-5", delay: "0.1s" , href:"https://www.youtube.com/embed/VBONQKJp5PQ?si=JgT48jB8XP_XOMVF"},
+            { name: "Wedding", link: "img/event-6.jpg", lightbox: "event-6", delay: "0.3s" , href:"https://www.youtube.com/embed/VBONQKJp5PQ?si=JgT48jB8XP_XOMVF"},
+            { name: "Buffet", link: "img/event-7.jpg", lightbox: "event-7", delay: "0.5s" , href:"https://www.youtube.com/embed/VBONQKJp5PQ?si=JgT48jB8XP_XOMVF"},
+            { name: "Corporate", link: "img/event-8.jpg", lightbox: "event-17", delay: "0.7s" , href:"https://www.youtube.com/embed/VBONQKJp5PQ?si=JgT48jB8XP_XOMVF"}
         ] 
     }, 
     { text: "Pharmacological", href: "#tab-2",
         video_link: [
-            { name: "Wedding", link: "img/event-1.jpg", lightbox: "event-1", delay: "0.1s" },
-            { name: "Corporate", link: "img/event-2.jpg", lightbox: "event-2", delay: "0.3s" },
+            { name: "Wedding", link: "img/event-1.jpg", lightbox: "event-1", delay: "0.1s" , href:"https://www.youtube.com/embed/VBONQKJp5PQ?si=JgT48jB8XP_XOMVF"},
+            { name: "Corporate", link: "img/event-2.jpg", lightbox: "event-2", delay: "0.3s" , href:"https://www.youtube.com/embed/VBONQKJp5PQ?si=JgT48jB8XP_XOMVF"},
         ]
     }, 
     { text: "Endodontics", href: "#tab-3", active: true, 
         video_link: [
-            { name: "Wedding", link: "img/event-3.jpg", lightbox: "event-3", delay: "0.5s" },
-            { name: "Buffet", link: "img/latest_videos/endodontics/endo1.jpeg", lightbox: "event-4", delay: "0.7s" },
+            { name: "Wedding", link: "img/event-3.jpg", lightbox: "event-3", delay: "0.5s" , href:"https://www.youtube.com/embed/VBONQKJp5PQ?si=JgT48jB8XP_XOMVF"},
+            { name: "Buffet", link: "img/latest_videos/endodontics/endo1.jpeg", lightbox: "event-4", delay: "0.7s" , href:"https://youtube.com/shorts/p1YDUHrFG3Q?si=pCeVEWeffdEjJXGI"},
+            { name: "Buffet", link: "img/latest_videos/endodontics/endo1.jpeg", lightbox: "event-4", delay: "0.7s" , href:"https://www.youtube.com/embed/p1YDUHrFG3Q"},
+
         ] }, 
     { text: "General Dentistry", href: "#tab-4", 
         video_link: [
-            { name: "Cocktail", link: "img/event-5.jpg", lightbox: "event-5", delay: "0.1s" },
-            { name: "Wedding", link: "img/event-6.jpg", lightbox: "event-6", delay: "0.3s" },
+            { name: "Cocktail", link: "img/event-5.jpg", lightbox: "event-5", delay: "0.1s" , href:"https://www.youtube.com/embed/VBONQKJp5PQ?si=JgT48jB8XP_XOMVF"},
+            { name: "Wedding", link: "img/event-6.jpg", lightbox: "event-6", delay: "0.3s" , href:"https://www.youtube.com/embed/VBONQKJp5PQ?si=JgT48jB8XP_XOMVF"},
         ] }, 
     { text: "Dental Materials", href: "#tab-5", 
         video_link: [
-            { name: "Corporate", link: "img/event-8.jpg", lightbox: "event-17", delay: "0.7s" }
+            { name: "Corporate", link: "img/event-8.jpg", lightbox: "event-17", delay: "0.7s" , href:"https://www.youtube.com/embed/VBONQKJp5PQ?si=JgT48jB8XP_XOMVF"}
         ] }, 
     { text: "Clinical Hacks", href: "#tab-6", 
         video_link: [
-            { name: "Wedding", link: "img/event-1.jpg", lightbox: "event-1", delay: "0.1s" },
+            { name: "Wedding", link: "img/event-1.jpg", lightbox: "event-1", delay: "0.1s" , href:"https://www.youtube.com/embed/VBONQKJp5PQ?si=JgT48jB8XP_XOMVF"},
         ] } 
 ];
 
@@ -94,7 +96,7 @@ function handleClick(text) {
                         <div class="event-img position-relative">
                             <div class="img-fluid rounded w-100 col-lg-5 wow bounceInUp" data-wow-delay="0.1s"> 
                                 <div class="video" style="background: linear-gradient(rgba(254, 218, 154, 0.1), rgba(254, 218, 154, 0.1)), url(`+video.link+`) !important;">
-                                    <button type="button" class="btn btn-play" data-bs-toggle="modal" data-bs-target="#videoModal"> 
+                                    <button type="button" class="btn btn-play" data-bs-toggle="modal" data-bs-target="#videoModal" data-video="${video.href}"> 
                                 <span></span> 
                               </button> 
                               </div>
@@ -114,6 +116,21 @@ function handleClick(text) {
     }
     
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+  var videoModal = document.getElementById('videoModal');
+  var videoFrame = document.getElementById('videoFrame');
+
+  videoModal.addEventListener('show.bs.modal', function (event) {
+    var button = event.relatedTarget;
+    var videoUrl = button.getAttribute('data-video');
+    videoFrame.src = videoUrl;
+  });
+
+  videoModal.addEventListener('hidden.bs.modal', function () {
+    videoFrame.src = "";
+  });
+});
 
 setvideounorderedlistHTML();
 
