@@ -22,15 +22,12 @@ const menuItems = [
     }, 
     { text: "Endodontics", href: "#tab-3", active: true, 
         video_link: [
-            { name: "Wedding", link: "img/event-3.jpg", lightbox: "event-3", delay: "0.5s" , href:"https://www.youtube.com/embed/VBONQKJp5PQ?si=JgT48jB8XP_XOMVF"},
-
-            { name: "Buffet", link: "img/latest_videos/endodontics/endo1.jpeg", lightbox: "event-4", delay: "0.7s" , href:"https://www.youtube.com/embed/p1YDUHrFG3Q"},
+            { name: "Retreatment", link: "img/latest_videos/endodontics/endo1.jpeg", lightbox: "event-4", delay: "0.7s" , href:"https://www.youtube.com/embed/p1YDUHrFG3Q"},
 
         ] }, 
     { text: "General Dentistry", href: "#tab-4", 
         video_link: [
-            { name: "Cocktail", link: "img/event-5.jpg", lightbox: "event-5", delay: "0.1s" , href:"https://www.youtube.com/embed/VBONQKJp5PQ?si=JgT48jB8XP_XOMVF"},
-            { name: "Wedding", link: "img/event-6.jpg", lightbox: "event-6", delay: "0.3s" , href:"https://www.youtube.com/embed/VBONQKJp5PQ?si=JgT48jB8XP_XOMVF"},
+            { name: "Dry Socket", link: "img/latest_videos/general_dentistry/dry_socket.jpeg", lightbox: "event-5", delay: "0.1s" , href:"https://youtube.com/shorts/AlCfoBCPi8U?si=39cor4l0aW2vd6-V"},
         ] }, 
     { text: "Dental Materials", href: "#tab-5", 
         video_link: [
