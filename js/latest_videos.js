@@ -3,7 +3,6 @@ const menuItems = [
     { 
         text: "All Videos", 
         href: "#tab-1", 
-        active: true, 
         video_link: [
             { name: "Wedding", link: "img/event-1.jpg", lightbox: "event-1", delay: "0.1s" },
             { name: "Corporate", link: "img/event-2.jpg", lightbox: "event-2", delay: "0.3s" },
@@ -21,7 +20,7 @@ const menuItems = [
             { name: "Corporate", link: "img/event-2.jpg", lightbox: "event-2", delay: "0.3s" },
         ]
     }, 
-    { text: "Endodontics", href: "#tab-3", 
+    { text: "Endodontics", href: "#tab-3", active: true, 
         video_link: [
             { name: "Wedding", link: "img/event-3.jpg", lightbox: "event-3", delay: "0.5s" },
             { name: "Buffet", link: "img/event-4.jpg", lightbox: "event-4", delay: "0.7s" },
@@ -67,7 +66,7 @@ function setvideounorderedlistHTML() {
         ulHTML += `
             <li class="nav-item p-2">
                 <a class="d-flex mx-2 py-2 border border-primary bg-light rounded-pill ${item.active ? 'active' : ''}" 
-                   data-bs-toggle="pill" href="${item.href}" onclick="handleClick('${item.text}', '${item.href}')">
+                   data-bs-toggle="pill" href="${item.href}" onclick="handleClick('${item.text}')">
                     <span class="text-dark" style="width: 150px;">${item.text}</span>
                 </a>
             </li>`;
@@ -76,7 +75,7 @@ function setvideounorderedlistHTML() {
     document.getElementById("menu-container-for-videos").innerHTML = ulHTML;
 }
 
-function handleClick(text, href) {
+function handleClick(text) {
     let video_link_HTML = '';
     for (let i = 0; i < menuItems.length; i++) {
         const item = menuItems[i];
@@ -93,10 +92,9 @@ function handleClick(text, href) {
                 video_link_HTML += `
                     <div class="col-md-6 col-lg-3" data-wow-delay="${video.delay}">
                         <div class="event-img position-relative">
-                            <div class="img-fluid rounded w-100 col-lg-5 wow bounceInUp" data-wow-delay="0.1s">
-                                
-                              <div class="video"> 
-                                <button type="button" class="btn btn-play" data-bs-toggle="modal" data-bs-target="#videoModal"> 
+                            <div class="img-fluid rounded w-100 col-lg-5 wow bounceInUp" data-wow-delay="0.1s"> 
+                                <div class="video" style="background: linear-gradient(rgba(254, 218, 154, 0.1), rgba(254, 218, 154, 0.1)), url(`+video.link+`) !important;">
+                                    <button type="button" class="btn btn-play" data-bs-toggle="modal" data-bs-target="#videoModal"> 
                                 <span></span> 
                               </button> 
                               </div>
@@ -118,4 +116,19 @@ function handleClick(text, href) {
 }
 
 setvideounorderedlistHTML();
-handleClick(menuItems[0].text, menuItems[0].href)
+
+function show_slected_videos_list(){
+    
+    for (let i = 0; i < menuItems.length; i++) {
+        const item = menuItems[i];
+        try {
+            if (item["active"] == true){
+                return handleClick(menuItems[i].text)
+            }   
+        } catch (error) {
+            // console.log(error);
+        }
+    }    
+}
+
+show_slected_videos_list()
