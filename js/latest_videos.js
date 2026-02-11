@@ -23,6 +23,7 @@ const menuItems = [
     { text: "Endodontics", href: "#tab-3", active: true, 
         video_link: [
             { name: "Wedding", link: "img/event-3.jpg", lightbox: "event-3", delay: "0.5s" , href:"https://www.youtube.com/embed/VBONQKJp5PQ?si=JgT48jB8XP_XOMVF"},
+
             { name: "Buffet", link: "img/latest_videos/endodontics/endo1.jpeg", lightbox: "event-4", delay: "0.7s" , href:"https://www.youtube.com/embed/p1YDUHrFG3Q"},
 
         ] }, 
@@ -94,7 +95,7 @@ function handleClick(text) {
                     <div class="col-md-6 col-lg-3" data-wow-delay="${video.delay}">
                         <div class="event-img position-relative">
                             <div class="img-fluid rounded w-100 col-lg-5 wow bounceInUp" data-wow-delay="0.1s"> 
-                                <div class="video" style="background: linear-gradient(rgba(254, 218, 154, 0.1), rgba(254, 218, 154, 0.1)), url(`+video.link+`) !important;">
+                                <div class="video" style="background: linear-gradient(rgba(254, 218, 154, 0.1), rgba(254, 218, 154, 0.1)), url(`+video.link+`) !important; background-repeat:no-repeat !important">
                                     <button type="button" class="btn btn-play" data-bs-toggle="modal" data-bs-target="#videoModal" data-video="${video.href}"> 
                                 <span></span> 
                               </button> 
