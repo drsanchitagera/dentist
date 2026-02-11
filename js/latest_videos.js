@@ -23,7 +23,6 @@ const menuItems = [
     { text: "Endodontics", href: "#tab-3", active: true, 
         video_link: [
             { name: "Wedding", link: "img/event-3.jpg", lightbox: "event-3", delay: "0.5s" , href:"https://www.youtube.com/embed/VBONQKJp5PQ?si=JgT48jB8XP_XOMVF"},
-            { name: "Buffet", link: "img/latest_videos/endodontics/endo1.jpeg", lightbox: "event-4", delay: "0.7s" , href:"https://youtube.com/shorts/p1YDUHrFG3Q?si=pCeVEWeffdEjJXGI"},
             { name: "Buffet", link: "img/latest_videos/endodontics/endo1.jpeg", lightbox: "event-4", delay: "0.7s" , href:"https://www.youtube.com/embed/p1YDUHrFG3Q"},
 
         ] }, 
