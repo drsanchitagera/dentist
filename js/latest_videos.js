@@ -23,7 +23,7 @@ const menuItems = [
     { text: "Endodontics", href: "#tab-3", active: true, 
         video_link: [
             { name: "Wedding", link: "img/event-3.jpg", lightbox: "event-3", delay: "0.5s" },
-            { name: "Buffet", link: "img/event-4.jpg", lightbox: "event-4", delay: "0.7s" },
+            { name: "Buffet", link: "img/latest_videos/endodontics/endo1.jpeg", lightbox: "event-4", delay: "0.7s" },
         ] }, 
     { text: "General Dentistry", href: "#tab-4", 
         video_link: [
