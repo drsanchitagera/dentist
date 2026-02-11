@@ -95,7 +95,7 @@ function handleClick(text) {
                     <div class="col-md-6 col-lg-3" data-wow-delay="${video.delay}">
                         <div class="event-img position-relative">
                             <div class="img-fluid rounded w-100 col-lg-5 wow bounceInUp" data-wow-delay="0.1s"> 
-                                <div class="video" style="background: linear-gradient(rgba(254, 218, 154, 0.1), rgba(254, 218, 154, 0.1)), url(`+video.link+`) !important; background-repeat:no-repeat !important">
+                                <div class="video" style="background-image: url(`+video.link+`) !important; background-repeat:no-repeat !important">
                                     <button type="button" class="btn btn-play" data-bs-toggle="modal" data-bs-target="#videoModal" data-video="${video.href}"> 
                                 <span></span> 
                               </button> 
