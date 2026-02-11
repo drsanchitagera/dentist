@@ -27,7 +27,7 @@ const menuItems = [
         ] }, 
     { text: "General Dentistry", href: "#tab-4", 
         video_link: [
-            { name: "Dry Socket", link: "img/latest_videos/general_dentistry/dry_socket.jpeg", lightbox: "event-5", delay: "0.1s" , href:"https://youtube.com/shorts/AlCfoBCPi8U?si=39cor4l0aW2vd6-V"},
+            { name: "Dry Socket", link: "img/latest_videos/general_dentistry/dry_socket.jpeg", lightbox: "event-5", delay: "0.1s" , href:"https://www.youtube.com/embed/AlCfoBCPi8U?rel=0"},
         ] }, 
     { text: "Dental Materials", href: "#tab-5", 
         video_link: [
