@@ -10,15 +10,16 @@ const menuItems = [
             { name: "Inferior Alveolar Nerve Block", link: "img/latest_videos/general_dentistry/2.jpeg", lightbox: "event-5", delay: "0.1s" , href:"https://www.youtube.com/embed/upoUwuEAZw8?rel=0"},
             { name: "Corporate", link: "img/event-8.jpg", lightbox: "event-17", delay: "0.7s" , href:"https://www.youtube.com/embed/VBONQKJp5PQ?si=JgT48jB8XP_XOMVF"},
             { name: "Clinical Hacks 1", link: "img/latest_videos/clinical_hacks/2.jpeg", lightbox: "event-1", delay: "0.1s" , href:"https://www.youtube.com/embed/cjNRy5U0eZs?rel=0"},
-            { name: "Clinical Hacks 2", link: "img/latest_videos/clinical_hacks/2.jpeg", lightbox: "event-1", delay: "0.1s" , href:"https://www.youtube.com/embed/GiPB1_JcfjU?rel=0"}
+            { name: "Clinical Hacks 2", link: "img/latest_videos/clinical_hacks/2.jpeg", lightbox: "event-1", delay: "0.1s" , href:"https://www.youtube.com/embed/GiPB1_JcfjU?rel=0"},
+            { name: "Clinical Hacks 3", link: "img/latest_videos/clinical_hacks/3.jpeg", lightbox: "event-1", delay: "0.1s" , href:"https://www.youtube.com/embed/dVUZdQK1gx4?rel=0"}
         ] 
     }, 
-    { text: "Pharmacological", href: "#tab-2",
+    { text: "Pharmacological", href: "#tab-2", active: true, 
         video_link: [
             { name: "Add In Your Prescription", link: "img/latest_videos/pharmacological/1.jpeg", lightbox: "event-1", delay: "0.1s" , href:"https://www.youtube.com/embed/FWj9oUSgM4A?rel=0"},
         ]
     }, 
-    { text: "Endodontics", href: "#tab-3", active: true, 
+    { text: "Endodontics", href: "#tab-3", 
         video_link: [
             { name: "Retreatment", link: "img/latest_videos/endodontics/1.jpeg", lightbox: "event-4", delay: "0.7s" , href:"https://www.youtube.com/embed/p1YDUHrFG3Q"},
 
@@ -34,8 +35,9 @@ const menuItems = [
         ] }, 
     { text: "Clinical Hacks", href: "#tab-6", 
         video_link: [
-            { name: "Clinical Hacks 1", link: "img/latest_videos/clinical_hacks/2.jpeg", lightbox: "event-1", delay: "0.1s" , href:"https://www.youtube.com/embed/cjNRy5U0eZs?rel=0"},
-            { name: "Clinical Hacks 2", link: "img/latest_videos/clinical_hacks/2.jpeg", lightbox: "event-1", delay: "0.1s" , href:"https://www.youtube.com/embed/GiPB1_JcfjU?rel=0"}
+            { name: "Clinical Hacks 1", link: "img/latest_videos/clinical_hacks/1.jpeg", lightbox: "event-1", delay: "0.1s" , href:"https://www.youtube.com/embed/cjNRy5U0eZs?rel=0"},
+            { name: "Clinical Hacks 2", link: "img/latest_videos/clinical_hacks/2.jpeg", lightbox: "event-1", delay: "0.1s" , href:"https://www.youtube.com/embed/GiPB1_JcfjU?rel=0"},
+            { name: "Clinical Hacks 3", link: "img/latest_videos/clinical_hacks/3.jpeg", lightbox: "event-1", delay: "0.1s" , href:"https://www.youtube.com/embed/dVUZdQK1gx4?rel=0"}
         ] } 
 ];
 
