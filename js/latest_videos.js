@@ -4,30 +4,29 @@ const menuItems = [
         text: "All Videos", 
         href: "#tab-1", 
         video_link: [
-            { name: "Wedding", link: "img/event-1.jpg", lightbox: "event-1", delay: "0.1s" , href:"https://www.youtube.com/embed/VBONQKJp5PQ?si=JgT48jB8XP_XOMVF"},
-            { name: "Corporate", link: "img/event-2.jpg", lightbox: "event-2", delay: "0.3s" , href:"https://www.youtube.com/embed/VBONQKJp5PQ?si=JgT48jB8XP_XOMVF"},
-            { name: "Wedding", link: "img/event-3.jpg", lightbox: "event-3", delay: "0.5s" , href:"https://www.youtube.com/embed/VBONQKJp5PQ?si=JgT48jB8XP_XOMVF"},
-            { name: "Buffet", link: "img/event-4.jpg", lightbox: "event-4", delay: "0.7s" , href:"https://www.youtube.com/embed/VBONQKJp5PQ?si=JgT48jB8XP_XOMVF"},
-            { name: "Cocktail", link: "img/event-5.jpg", lightbox: "event-5", delay: "0.1s" , href:"https://www.youtube.com/embed/VBONQKJp5PQ?si=JgT48jB8XP_XOMVF"},
-            { name: "Wedding", link: "img/event-6.jpg", lightbox: "event-6", delay: "0.3s" , href:"https://www.youtube.com/embed/VBONQKJp5PQ?si=JgT48jB8XP_XOMVF"},
-            { name: "Buffet", link: "img/event-7.jpg", lightbox: "event-7", delay: "0.5s" , href:"https://www.youtube.com/embed/VBONQKJp5PQ?si=JgT48jB8XP_XOMVF"},
-            { name: "Corporate", link: "img/event-8.jpg", lightbox: "event-17", delay: "0.7s" , href:"https://www.youtube.com/embed/VBONQKJp5PQ?si=JgT48jB8XP_XOMVF"}
+            { name: "Add In Your Prescription", link: "img/latest_videos/pharmacological/1.jpeg", lightbox: "event-1", delay: "0.1s" , href:"https://www.youtube.com/embed/FWj9oUSgM4A?rel=0"},
+            { name: "Retreatment", link: "img/latest_videos/endodontics/1.jpeg", lightbox: "event-4", delay: "0.7s" , href:"https://www.youtube.com/embed/p1YDUHrFG3Q"},
+            { name: "Dry Socket", link: "img/latest_videos/general_dentistry/1.jpeg", lightbox: "event-5", delay: "0.1s" , href:"https://www.youtube.com/embed/AlCfoBCPi8U?rel=0"},
+            { name: "Inferior Alveolar Nerve Block", link: "img/latest_videos/general_dentistry/2.jpeg", lightbox: "event-5", delay: "0.1s" , href:"https://www.youtube.com/embed/upoUwuEAZw8?rel=0"},
+            { name: "Corporate", link: "img/event-8.jpg", lightbox: "event-17", delay: "0.7s" , href:"https://www.youtube.com/embed/VBONQKJp5PQ?si=JgT48jB8XP_XOMVF"},
+            { name: "Clinical Hacks 1", link: "img/latest_videos/clinical_hacks/2.jpeg", lightbox: "event-1", delay: "0.1s" , href:"https://www.youtube.com/embed/cjNRy5U0eZs?rel=0"},
+            { name: "Clinical Hacks 2", link: "img/latest_videos/clinical_hacks/2.jpeg", lightbox: "event-1", delay: "0.1s" , href:"https://www.youtube.com/embed/GiPB1_JcfjU?rel=0"}
         ] 
     }, 
     { text: "Pharmacological", href: "#tab-2",
         video_link: [
-            { name: "Wedding", link: "img/event-1.jpg", lightbox: "event-1", delay: "0.1s" , href:"https://www.youtube.com/embed/VBONQKJp5PQ?si=JgT48jB8XP_XOMVF"},
-            { name: "Corporate", link: "img/event-2.jpg", lightbox: "event-2", delay: "0.3s" , href:"https://www.youtube.com/embed/VBONQKJp5PQ?si=JgT48jB8XP_XOMVF"},
+            { name: "Add In Your Prescription", link: "img/latest_videos/pharmacological/1.jpeg", lightbox: "event-1", delay: "0.1s" , href:"https://www.youtube.com/embed/FWj9oUSgM4A?rel=0"},
         ]
     }, 
     { text: "Endodontics", href: "#tab-3", active: true, 
         video_link: [
-            { name: "Retreatment", link: "img/latest_videos/endodontics/endo1.jpeg", lightbox: "event-4", delay: "0.7s" , href:"https://www.youtube.com/embed/p1YDUHrFG3Q"},
+            { name: "Retreatment", link: "img/latest_videos/endodontics/1.jpeg", lightbox: "event-4", delay: "0.7s" , href:"https://www.youtube.com/embed/p1YDUHrFG3Q"},
 
         ] }, 
     { text: "General Dentistry", href: "#tab-4", 
         video_link: [
-            { name: "Dry Socket", link: "img/latest_videos/general_dentistry/dry_socket.jpeg", lightbox: "event-5", delay: "0.1s" , href:"https://www.youtube.com/embed/AlCfoBCPi8U?rel=0"},
+            { name: "Dry Socket", link: "img/latest_videos/general_dentistry/1.jpeg", lightbox: "event-5", delay: "0.1s" , href:"https://www.youtube.com/embed/AlCfoBCPi8U?rel=0"},
+            { name: "Inferior Alveolar Nerve Block", link: "img/latest_videos/general_dentistry/2.jpeg", lightbox: "event-5", delay: "0.1s" , href:"https://www.youtube.com/embed/upoUwuEAZw8?rel=0"},
         ] }, 
     { text: "Dental Materials", href: "#tab-5", 
         video_link: [
@@ -35,7 +34,8 @@ const menuItems = [
         ] }, 
     { text: "Clinical Hacks", href: "#tab-6", 
         video_link: [
-            { name: "Wedding", link: "img/event-1.jpg", lightbox: "event-1", delay: "0.1s" , href:"https://www.youtube.com/embed/VBONQKJp5PQ?si=JgT48jB8XP_XOMVF"},
+            { name: "Clinical Hacks 1", link: "img/latest_videos/clinical_hacks/2.jpeg", lightbox: "event-1", delay: "0.1s" , href:"https://www.youtube.com/embed/cjNRy5U0eZs?rel=0"},
+            { name: "Clinical Hacks 2", link: "img/latest_videos/clinical_hacks/2.jpeg", lightbox: "event-1", delay: "0.1s" , href:"https://www.youtube.com/embed/GiPB1_JcfjU?rel=0"}
         ] } 
 ];
 
