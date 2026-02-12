@@ -8,7 +8,7 @@ const menuItems = [
             { name: "Retreatment", link: "img/latest_videos/endodontics/1.jpeg", lightbox: "event-4", delay: "0.7s" , href:"https://www.youtube.com/embed/p1YDUHrFG3Q"},
             { name: "Dry Socket", link: "img/latest_videos/general_dentistry/1.jpeg", lightbox: "event-5", delay: "0.1s" , href:"https://www.youtube.com/embed/AlCfoBCPi8U?rel=0"},
             { name: "Inferior Alveolar Nerve Block", link: "img/latest_videos/general_dentistry/2.jpeg", lightbox: "event-5", delay: "0.1s" , href:"https://www.youtube.com/embed/upoUwuEAZw8?rel=0"},
-            { name: "Corporate", link: "img/event-8.jpg", lightbox: "event-17", delay: "0.7s" , href:"https://www.youtube.com/embed/VBONQKJp5PQ?si=JgT48jB8XP_XOMVF"},
+            { name: "Calcium Hydroxide For Every Canal", link: "img/latest_videos/dental_materials/1.jpeg", lightbox: "event-17", delay: "0.7s" , href:"https://www.youtube.com/embed/rSvb0mUi5rc?rel=0"},
             { name: "Clinical Hacks 1", link: "img/latest_videos/clinical_hacks/2.jpeg", lightbox: "event-1", delay: "0.1s" , href:"https://www.youtube.com/embed/cjNRy5U0eZs?rel=0"},
             { name: "Clinical Hacks 2", link: "img/latest_videos/clinical_hacks/2.jpeg", lightbox: "event-1", delay: "0.1s" , href:"https://www.youtube.com/embed/GiPB1_JcfjU?rel=0"},
             { name: "Clinical Hacks 3", link: "img/latest_videos/clinical_hacks/3.jpeg", lightbox: "event-1", delay: "0.1s" , href:"https://www.youtube.com/embed/dVUZdQK1gx4?rel=0"}
@@ -31,7 +31,7 @@ const menuItems = [
         ] }, 
     { text: "Dental Materials", href: "#tab-5", 
         video_link: [
-            { name: "Corporate", link: "img/event-8.jpg", lightbox: "event-17", delay: "0.7s" , href:"https://www.youtube.com/embed/VBONQKJp5PQ?si=JgT48jB8XP_XOMVF"}
+            { name: "Calcium Hydroxide For Every Canal", link: "img/latest_videos/dental_materials/1.jpeg", lightbox: "event-17", delay: "0.7s" , href:"https://www.youtube.com/embed/rSvb0mUi5rc?rel=0"}
         ] }, 
     { text: "Clinical Hacks", href: "#tab-6", 
         video_link: [
